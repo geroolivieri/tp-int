@@ -6,34 +6,35 @@
   <title>BMW Motorsport</title>
   <link rel="stylesheet" href="index.css">
   <script src="https://kit.fontawesome.com/f8e21c5a17.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="https://www.bmw.com/etc.clientlibs/settings/wcm/designs/bmwcom/base/resources/ci2020/img/logo-dark.svg">
 </head>
 
 <body>
 
   <div class="divheader">
 
-    <header class="navbar">
+    <header id="init" class="navbar">
 
       <div class="left-items">
-        <h2>BMW Motorsport</h2>
+        <h1>BMW Motorsport</h1>
         <img class="logobm" src="https://www.bmw.com.ar/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/resources/img/BMW_White_Logo.svg" alt="">
 
       </div>
 
       <ul class="navbar-items">
-        <li>Home</li>
-        <li>Cars</li>
-        <li>Contact Us</li>
+        <a href="#top"><li>Home</li></a>
+       <a href="#middle"><li>Cars</li></a> 
+      <a href="#bottom"><li>Contact Us</li></a>  
       </ul>
 
       <ul class="right-items">
-        <li>Log In</li>
-        <li>Register</li>
+       <a href="./login.html" target="_blank"><li>Log In</li></a> 
+       <a href="./register.html" target="_blank"><li>Register</li></a> 
       </ul>
 
     </header>
 
-    <section class="sechome">
+    <section id="top" class="sechome">
 
       <div class="divsechome">
         <h3>The New BMW M4 GT4 2023</h3>
@@ -44,7 +45,7 @@
 
   </div>
 
-<div class="gallerydiv">
+<div id="middle" class="gallerydiv">
 
   <section class="gallerysec">
 
@@ -258,14 +259,16 @@
 
 <footer>
 
-<div class="contactsect">
+<div id="bottom" class="contactsect">
 
 <h4>Contact Us.</h4>
 <p><i class="fa-brands fa-instagram"></i> BMWM</p>
 <p><i class="fa-solid fa-phone"></i> 302-202-4845</p>
 <p><i class="fa-solid fa-envelope"></i> bmwm@outlook.com</p>
 <img class="mlogo" src="./.vscode/imgs/BMW-M-Logo2.png" alt="">
-
+<ul>
+  <a href="#init"><li  class="gotop" >Go Top</li></a>
+</ul>
 </div>
 
 </footer>
