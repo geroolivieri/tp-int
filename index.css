@@ -596,59 +596,288 @@ transition: all 0.5s linear;
 .gotop:hover{
   transform: translateY(-20px);
 }
+.logintitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  transform: translateY(-100%);
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 2em;
+  gap: 10px;
+}
+
+.logintitle img{
+  padding-top: 10px;
+}
 
 .container{
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
   background-image: url(./.vscode/imgs/loginbg.jpg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-  padding-left: 30px;
 }
 
-.user{
-  font-size: 1.5em;
-  color: lightskyblue;
+.all{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
   font-family: 'Fjalla One', sans-serif;
-  font-weight: 600;
+  margin-left: 30px;
+  
 }
-
-.inputuser{
-  width: 20%;
- background-color: inherit;
- color: white;
- border: solid 2px lightskyblue;
-}
-
-.pass{
+.login{
+  display: flex;
   font-size: 1.5em;
-  color: rgb(0, 0, 53);
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 600;
+  color: #2691d9;
+justify-content: center;
+align-items: center;
+padding-left: 30px;
 }
 
-.inputpass{
-  width: 20%;
- background-color: inherit;
- color: white;
- border: solid 2px rgb(0, 0, 53);
+.login h2{
+  margin: 0;
 }
-.divbut{
+
+.userlabel{
+  color: #2691d9;
+  font-size: 1.3em;
+}
+
+.userlabel input{
+  border-color: #adadad;
+  background: inherit;
+  color: white;
+}
+
+.passlabel{
+  color: #2691d9;
+  font-size: 1.3em;
+}
+
+.passlabel input{
+  border-color: #adadad;
+  background: inherit;
+  color: white;
+}
+
+.button{
   display: flex;
   justify-content: center;
-  align-items: center; 
-  width: 20%;
+  align-items: center;
 }
-.buttonn{
-  width: 100%;
-  height: 100%;
-  background-color: #9D1837;
-  color: black;
+
+.button button{
+  background-color: #2691d9;
+  color: white;
+  border-color: #adadad;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 1.1em;
-  border: solid 2px #660018;
+  width: 10vw;
+  height: 3vh;
+  border-radius: 20px;
+  margin-left: 50px;
+  font-size: 1em;
+}
+
+.fpass{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding-top: 10px;
+  font-family:'Antonio', sans-serif;
+}
+
+.fpass p{
+  color: white;
+  font-size: 1.2em;
+}
+
+.fpass button{
+  color: #adadad;
+  background-color: transparent;
+  border-style: none;
+transition: .5s;
+}
+
+.button button:hover{
+  cursor: pointer;
+}
+
+.fpass button:hover{
+  transform: translateY(50%);
+  cursor:pointer;
+}
+
+.containerregister{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-image: url(./.vscode/imgs/registerbg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.allregister{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Fjalla One', sans-serif;
+  margin-left: 30px;
+}
+
+.register{
+  display: flex;
+  font-size: 1.5em;
+  color: #2691d9;
+justify-content: center;
+align-items: center;
+padding-left: 30px;
+}
+
+.register h2{
+  margin: 0;
+}
+
+.reguserlabel{
+  color: #2691d9;
+  font-size: 1.3em;
+}
+
+.reguserlabel input{
+  border-color: #2691d9;
+  background: inherit;
+  color: black;
+}
+
+.regpasslabel{
+  color: #2691d9;
+  font-size: 1.3em;
+}
+
+.regpasslabel input{
+  border-color: #2691d9;
+  background: inherit;
+  color: black;
+}
+
+.regbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regbutton button:hover{
+  cursor: pointer;
+}
+
+.regbutton button{
+  background-color: #2691d9;
+  color: black;
+  border-color: #adadad;
+  font-family: 'Fjalla One', sans-serif;
+  width: 13vw;
+  height: 3vh;
+  border-radius: 20px;
+  font-size: 1.2em;
+ transform: translateX(32px);
+ margin-bottom: 6px;
+}
+
+.regpass{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  font-family:'Antonio', sans-serif;
+}
+
+.regpass p{
+  color: black;
+  font-size: 1.2em;
+}
+
+.regpass button{
+  color: black;
+  background-color: transparent;
+  border-style: none;
+transition: .5s;
+}
+
+.havacc{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  font-family:'Antonio', sans-serif;
+  gap: 5px;
+}
+
+.havacc p{
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.havacc button{
+  color: black;
+  background-color: transparent;
+  
+transition: .5s;
+font-size: 1em;
+border-color: #adadad;
+}
+
+.havacc button:hover{
+  cursor: pointer;
+}
+
+.havacc button:hover{
+  transform: translateY(50%);
+  cursor:pointer;
+}
+
+.registertitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  transform: translateY(-100%);
+  color: black;
+  font-family: 'Antonio', sans-serif;
+  font-size: 2em;
+  gap: 10px;
+}
+
+.registertitle h1{
+  margin: 0;
+}
+
+.regemaillabel{
+  color: #2691d9;
+  font-size: 1.3em;
+}
+
+.regemaillabel input{
+  border-color: #2691d9;
+  background: inherit;
+  color: black;
 }
