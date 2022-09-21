@@ -963,3 +963,30 @@ font-size: 1.5em;
       font-size: 1.4em;
     }
   }
+
+  @media (max-width: 376px){
+    .navbar h1{
+      font-size: 1em;
+    }
+    .navbar img{
+      width:40%;
+    }
+    .m4img img{
+      width: 300px;
+    }
+    .x7img img{
+      width: 300px;
+    }
+    .m8img img{
+      width: 350px;
+    }
+    .s1000img img{
+      width: 300px;
+    }
+    .gsimg img{
+      width: 300px;
+    }
+    .ninetimg img{
+      width: 300px;
+    }
+  }
