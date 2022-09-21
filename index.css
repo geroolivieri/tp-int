@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Fjalla+One&display=swap');
 
+
+h1{
+  margin: 0;
+}
 html {
   scroll-behavior: smooth;
  }
@@ -54,20 +58,21 @@ font-family: 'Fjalla One', sans-serif;
     list-style: none;
     display: inline-flex;
     gap: 20px; 
+    text-decoration: none;
 }
 
-.navbar-items li{ 
-    border: 2px solid white;
-    border-radius: 10px;
+.navbar-items li{
+  transition: .8s;
 }
 
 .navbar-items li:hover{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     background-color: #fff;
-    transition: 0.4s;
+    transition: .8s;
     color: black;
     border: 2px solid rgba(0, 191, 255, 0.685);
+    border-radius: 15px;
 }
 
 .right-items{
@@ -76,21 +81,24 @@ font-family: 'Fjalla One', sans-serif;
     flex-direction: column;
     font-size: 1.2em;
     gap: 5px;
+    margin: 0;
 }
 
 .right-items li{
     border: 2px solid white;
     border-radius: 5px;
     padding: 2.3px;
+    transition: .8s;
 }
 
 .right-items li:hover{
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     cursor: pointer;
     background-color: #fff;
-    transition: 0.4s;
+    transition: .8s;
     color: black;
     border: 2px solid rgba(0, 191, 255, 0.685);
+    border-radius: 15px;
 }
 
 .sechome{
@@ -152,6 +160,7 @@ font-family: 'Fjalla One', sans-serif;
 -ms-transition: all 1s linear;
 -o-transition: all 1s linear;
 transition: all 1s linear;
+flex-wrap: wrap;
 }
 
 .m4 h3{
@@ -183,7 +192,9 @@ transition: all 1s linear;
   border: 3px solid rgb(146, 148, 51);
   width: 100%;
   background-color:rgb(24, 19, 19);
-  gap: 40px; 
+  gap: 40px;
+  border-right: 0; 
+  border-left: 0;
 }
 
 .m4desc h4{
@@ -223,6 +234,7 @@ font-weight: 500;
 -o-transition: all 1s linear;
 transition: all 1s linear;
 flex-direction: row-reverse;
+flex-wrap: wrap;
 }
 
 .x7 h3{
@@ -255,6 +267,8 @@ flex-direction: row-reverse;
   width: 100%;
   background-color:rgb(24, 19, 19);
   gap: 40px; 
+  border-right: 0; 
+  border-left: 0;
 }
 
 .x7desc h4{
@@ -293,6 +307,7 @@ font-weight: 500;
 -ms-transition: all 1s linear;
 -o-transition: all 1s linear;
 transition: all 1s linear;
+flex-wrap: wrap;
 }
 
 .m8 h3{
@@ -325,6 +340,8 @@ transition: all 1s linear;
   width: 100%;
   background-color:rgb(24, 19, 19);
   gap: 40px; 
+  border-right: 0; 
+  border-left: 0;
 }
 
 .m8desc h4{
@@ -364,6 +381,7 @@ font-weight: 500;
 -o-transition: all 1s linear;
 transition: all 1s linear;
 flex-direction: row-reverse;
+flex-wrap: wrap;
 }
 
 .s1000 h3{
@@ -396,6 +414,8 @@ flex-direction: row-reverse;
   width: 100%;
   background-color:rgb(24, 19, 19);
   gap: 40px;
+  border-right: 0; 
+  border-left: 0;
 }
 
 .s1000desc h4{
@@ -434,6 +454,7 @@ font-weight: 500;
 -ms-transition: all 1s linear;
 -o-transition: all 1s linear;
 transition: all 1s linear;
+flex-wrap: wrap;
 }
 
 .gs h3{
@@ -466,6 +487,8 @@ transition: all 1s linear;
   width: 100%;
   background-color:rgb(24, 19, 19);
   gap: 40px;
+  border-right: 0; 
+  border-left: 0;
 }
 
 .gsdesc h4{
@@ -495,7 +518,7 @@ font-weight: 500;
 
 .ninetimg{
   display: flex;
-  width: 100%;
+  width: 99%;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
@@ -505,6 +528,7 @@ font-weight: 500;
 -o-transition: all 1s linear;
 transition: all 1s linear;
 flex-direction: row-reverse;
+flex-wrap: wrap;
 }
 
 .ninet h3{
@@ -537,6 +561,8 @@ flex-direction: row-reverse;
   width: 100%;
   background-color:rgb(24, 19, 19);
   gap: 40px; 
+  border-right: 0; 
+  border-left: 0;
 }
 
 .ninetdesc h4{
@@ -595,6 +621,7 @@ transition: all 0.5s linear;
 
 .gotop:hover{
   transform: translateY(-20px);
+  font-size: 2.2em;
 }
 .logintitle{
   display: flex;
@@ -881,3 +908,58 @@ border-color: #adadad;
   background: inherit;
   color: black;
 }
+
+
+@media (max-width: 768px){
+.navbar-items{
+font-size: 1.5em;
+}
+}
+
+@media (max-width: 712px){
+  .navbar-items{
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 645px){
+  .navbar h1{
+    font-size: 2em;
+  }
+  .right-items{
+    font-size: 0.5em;
+  }
+}
+
+@media (max-width: 669px){
+  .m4img img{
+    width: 400px;
+  }
+  .x7img img{
+    width: 400px;
+  }
+  .m8img img{
+    width: 450px;
+  }
+  .s1000img img{
+    width: 400px;
+  }
+  .gsimg img{
+    width: 400px;
+  }
+  .ninetimg img{
+    width: 400px;
+  }
+}
+
+@media (max-width: 484px){
+  .right-items{
+    font-size: 0.2em;
+  }
+}
+
+@media (max-width: 566px){
+  .navbar h1{
+      font-size: 1.4em;
+    }
+  }
