@@ -987,6 +987,9 @@ font-size: 1.5em;
   .logintitle h1{
     font-size: 30px;
   }
+  .container button{
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 484px){
